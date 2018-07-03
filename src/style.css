@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.scala-container {
+    font-family: 'Roboto';
+    display: flex;
+    height: 100vh;
+}
+
+.dash-scala-logo {
+    flex: 1;
+    background-image: url('./img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 200px 68px; 
+    height: 68px;
+    margin: 15px 0;
+    max-width: 90%;
+}
+
+.dash-customer-logo {
+    flex: 1;
+    background-image: url('./img/logo.png');
+    background-repeat: no-repeat;
+    background-size: 150px 51px; 
+    height: 51px;
+    margin: 15px 0;
+    max-width: 90%;
+}
+
+.dash-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: rgb(4,65,126);
+    background: linear-gradient(90deg, rgba(4,70,126,1) 0%, rgba(4,56,94,1) 80%, rgba(4,42,62,1) 100%);
+    padding: 10px 10px 10px 20px;
+    color: #ECECEC;
+    letter-spacing: 2px;
+}
+
+.dash-links {
+    list-style-type: none;
+    flex: 7;
+    padding: unset;
+}
+
+.dash-footer-links {
+    list-style-type: none;
+    padding: unset;
+}
+
+.dash-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+.dash-link-icon {
+    color: #42a1f4;
+    width: 22px !important; /* needed to override fa default width with higher specificity */
+    margin-right: 18px;
+}
+
+.dash-copyright-statement {
+    font-weight: 300;
+    font-size: 14px;    
+}
+
+.dash-right {
+    background-color: #EFEFEF;
+    flex: 6;
+    padding: 0 16px 0 32px;
+    overflow-y: scroll;
+}
+
+.dash-right-title {
+    font-size: 34px;
+    margin: 22px 0;
+    font-weight: 300;
+    color: #42a1f4;
+}
+
+.dash-right-options {
+    text-align: right;
+    margin: 0 200px;
+    padding: 10px;
+}
+
+.dash-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: flex-end;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.18);
+    border: 1px solid #ECECEC;
+    padding: 20px
+}
+
+.card-file-directory {
+    display: flex;
+    flex-direction: row;
+    margin: 6px 0;
+}
+
+.card-file-directory > * {
+    margin: 0px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-file-directory-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-file-directory-control-chevron {
+    opacity: 0;
+    margin-left: 6px;
+    transition: all .25s ease-in-out;
+}
+
+.card-file-directory-control:hover > .card-file-directory-control-chevron {
+    opacity: 1;
+}
+
+.card-file-directory-control-chevron.active {
+    opacity: 1;
+}
+
+.card-file-directory-control-chevron.ascending {
+    transform: rotate(-180deg)
+}
+
+.card-checkbox {
+    flex: 1;
+}
+
+.card-file-title {
+    flex: 6;
+}
+
+.card-file-header-path {
+    margin-left: 18px;
+    font-weight: 300;
+}
+
+.card-icon {
+    color: #42a1f4;
+    margin-right: 6px;
+}
+
+.card-file-type {
+    flex: 3;
+}
+
+.card-file-modified-date {
+    flex: 4;
+}
+
+.card-file-size {
+    flex: 4;
+}
+
+.card-file-header {
+    padding: 40px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.card-file-header-title {
+    font-weight: 800;
+}
+
+.card-file-header-interactions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-file-header-actions {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.card-file-header-search-container {
+    display: flex;
+    flex: 4;
+    justify-content: flex-end;
+}
+
+.card-file-header-search {
+    background-color: #EFEFEF;
+    padding: 8px 16px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 220px;
+    border: none;
+}
+
+.dash-icon {
+    margin: 0 6px;
+}
