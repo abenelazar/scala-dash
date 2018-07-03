@@ -190,7 +190,7 @@ body {
 
 .card-file-header-actions {
     display: flex;
-    flex: 1;
+    flex: 2;
     justify-content: space-between;
 }
 

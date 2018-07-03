@@ -27,12 +27,17 @@ export default class DashRight extends Component {
 
     if(this.state.sortField) {
       data = data.sort((a, b) => {
-        const _a =  a[this.state.sortField].toString()
-        const _b = b[this.state.sortField].toString()
-        if(_a === b) {
+
+        let _a = a[this.state.sortField];
+        let _b = b[this.state.sortField];
+        if(_a === _b) {
           return 0;
-        }else {
+        }
+        // room for improvement
+        else if(typeof _a === 'string') {
           return this.state.descending ? _b.localeCompare(_a) : _a.localeCompare(_b);
+        }else {
+          return this.state.descending ? (_b > _a ? 1 : -1 ) : (_a > _b ? 1 : -1);
         }
       });
     }

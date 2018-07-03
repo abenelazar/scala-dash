@@ -16,7 +16,7 @@ export default class FileHeader extends Component {
         </div>
 
         <div className='card-file-header-interactions'>
-          <div className='card-file-header-actions'>
+          <span className='card-file-header-actions'>
             <span className='card-file-header-action'>
               <FontAwesomeIcon className='card-icon' icon={faPlusCircle} />
               New Directory
@@ -25,10 +25,10 @@ export default class FileHeader extends Component {
               <FontAwesomeIcon className='card-icon' icon={faUpload} />
               Upload
           </span>
-          </div>
-          <div className='card-file-header-search-container'>
+          </span>
+          <span className='card-file-header-search-container'>
             <input onChange={this.props.onSearchChange} className='card-file-header-search' type='search' placeholder='SEARCH...' />
-          </div>
+          </span>
         </div>
       </Card>
     );
