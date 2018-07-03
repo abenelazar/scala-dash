@@ -2,6 +2,9 @@
 
 This app is a dashboard front-end sample, which shows good use of layout, flex properties.
 
+Check out a [Demo](https://scala-dash.firebaseapp.com/)
+
+
 ## Getting Started
 
 ```
